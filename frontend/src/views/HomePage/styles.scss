@@ -1,0 +1,43 @@
+.content {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+
+  border: solid 5px #2e5f3e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+  background: #4fa46b;
+  color: #fff;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    margin-bottom: 16px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__link {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px 20px;
+      text-align: center;
+      background: #2e5f3e;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background: lighten(#2e5f3e, 10%);
+      }
+    }
+  }
+}

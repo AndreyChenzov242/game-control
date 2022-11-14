@@ -1,0 +1,71 @@
+.controller {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #616161;
+  border: 10px solid #dcdede;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.directional-buttons {
+  position: relative;
+}
+
+.directional-buttons {
+  &__middle {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    height: 30px;
+    width: 30px;
+    background: #484a49;
+    border-radius: 50%;
+  }
+
+  &__button {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: #616161;
+    border: 4px solid #dcdede;
+    cursor: pointer;
+
+    &:active {
+      box-shadow: inset 0 11px 8px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &--right {
+      transform: rotate(90deg);
+      transform-origin: center right;
+      border-bottom: 0;
+      top: -5px;
+      left: 5px;
+    }
+
+    &--left {
+      right: 5px;
+      transform: rotate(-90deg);
+      transform-origin: center left;
+      top: -5px;
+      border-bottom: 0;
+    }
+
+    &--bottom {
+      top: 15px;
+      left: -15px;
+      border-bottom: 0;
+      z-index: 1;
+      transform: rotate(180deg);
+    }
+
+    &--top {
+      border-bottom: 0;
+      z-index: 1;
+      top: -55px;
+      left: -15px;
+    }
+  }
+}

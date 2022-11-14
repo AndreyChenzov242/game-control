@@ -1,0 +1,1 @@
+export { SquarePage } from "./SquarePage";
